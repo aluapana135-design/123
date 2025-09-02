@@ -1,0 +1,7 @@
+<EditText
+    android:id="@+id/edit_text_cpf"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Digite seu CPF"
+    android:inputType="number"
+    android:maxLength="11" />
