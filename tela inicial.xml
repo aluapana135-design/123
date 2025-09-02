@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F2F5" tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, [Nome do Usuário]!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu saldo atual:"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 1.234,56"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#007BFF" android:layout_marginBottom="24dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cartão Principal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tvCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome no Cartão: JOHN DOE"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvCpfCensored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF: ***.XXX.XXX-**" android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="4dp" />
+
+            <ImageView
+                android:id="@+id/ivCardImage"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_card_placeholder" android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Ícone do Cartão" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <Button
+            android:id="@+id/btnPix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Pix"
+            android:drawableTop="@drawable/ic_pix" android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:backgroundTint="#28A745" app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnBoleto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Pagar Boleto"
+            android:drawableTop="@drawable/ic_boleto" android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:backgroundTint="#FFC107" app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnConnectMachine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Maquininha"
+            android:drawableTop="@drawable/ic_machine" android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:backgroundTint="#17A2B8" app:cornerRadius="8dp"/>
+
+        <Button
+            android:id="@+id/btnOtherFunctions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Mais Opções"
+            android:drawableTop="@drawable/ic_more" android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:backgroundTint="#6C757D" app:cornerRadius="8dp"/>
+
+    </GridLayout>
+
+</LinearLayout>
