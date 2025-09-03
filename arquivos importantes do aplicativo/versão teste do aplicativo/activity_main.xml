@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvYouAreBeautiful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você está linda"
+        android:textSize="24sp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvWelcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá, usuário!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0,00"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnPix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pix"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnBoleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagar Boleto"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnConnectMachine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conectar Maquininha"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnOtherFunctions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Outras Funções" />
+
+</LinearLayout>
