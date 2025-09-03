@@ -59,4 +59,4 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Simulando Outras Funções...", Toast.LENGTH_SHORT).show()
         }
     }
-}
+} 
